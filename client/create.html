@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>StudentBookProject</title>
+</head>
+<body class="create-box">
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="create.html" class="nav__link active">Create New</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="create-student">
+            <form action="" class="create-student__form" onsubmit="submitForm(event, this)">
+                <span>
+                    Name:
+                </span>
+               <label for="name">Student: <input type="text" name="name" placeholder="Name"></label>
+                <span>
+                    Marks from subject:
+                </span>
+                <label for="math">Mathematic:<input type="number" min="0" max="100" name="math" placeholder="mark (0-100)"></label>
+                <label for="phis">Phisics:<input type="number" min="0" max="100" name="phis" placeholder="mark (0-100)"></label>
+                <label for="prog">Programming:<input type="number" min="0" max="100" name="prog" placeholder="mark (0-100)"></label>
+                <label for="phisical">Phisical culture:<input type="number" min="0" max="100" name="phisical" placeholder="mark (0-100)"></label>
+                <button type="submit" id="create-student">Create</button>
+            </form>
+        </div>
+    </main>
+    <script src="js/create.js"></script>
+</body>
+</html>
